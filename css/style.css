@@ -17,7 +17,67 @@
   font-weight: normal;
   font-style: normal;
 }
+
+
+
+.youtube-player {
+  position: relative;
+  padding-bottom: 56.23%;
+  /* Use 75% for 4:3 videos */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  margin: 5px;
+}
+
+.youtube-player iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background: transparent;
+}
+
+.youtube-player img {
+  bottom: 0;
+  display: block;
+  left: 0;
+  margin: auto;
+  max-width: 100%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  height: auto;
+  cursor: pointer;
+  -webkit-transition: .4s all;
+  -moz-transition: .4s all;
+  transition: .4s all;
+}
+
+.youtube-player img:hover {
+  -webkit-filter: brightness(75%);
+}
+
+.youtube-player .play {
+  height: 72px;
+  width: 72px;
+  left: 50%;
+  top: 50%;
+  margin-left: -36px;
+  margin-top: -36px;
+  position: absolute;
+  background: url("//i.imgur.com/TxzC70f.png") no-repeat;
+  cursor: pointer;
+}
+
+
 /* wayne */
+
 .app-block-wayne {
   background-color: #000;
   z-index: 1;
@@ -27,7 +87,9 @@
   margin-bottom: 75px;
 }
 
+
 /* Grid */
+
 .app-block-grid {
   margin-top: -25px;
 }
@@ -42,7 +104,9 @@
   width: 100%;
 }
 
+
 /* chainz block */
+
 .app-block-chainz {
   z-index: 5;
 }
@@ -51,7 +115,9 @@
   border-bottom: 7px solid black;
 }
 
+
 /* kanye block */
+
 .app-block-kanye {
   z-index: 4;
 }
@@ -60,7 +126,9 @@
   border-bottom: 7px solid #ffeaac;
 }
 
+
 /* mosdef block */
+
 .block-app-mosdef {
   z-index: 3;
   margin-bottom: -25px;
@@ -70,7 +138,9 @@
   border-bottom: 7px solid black;
 }
 
+
 /* nicki */
+
 .app-block-nicki {
   background-color: #e7e9d4;
 }
@@ -79,12 +149,16 @@
   font-weight: 400;
 }
 
+
 /**
  * +-----------------------+
  * | VOI Custom Styles     |
  * +-----------------------+
  */
+
+
 /* Logo */
+
 .main-logo-wrapper {
   position: absolute;
   top: 10px;
@@ -93,6 +167,7 @@
   z-index: 100;
   text-align: center;
 }
+
 .main-logo-wrapper h2 {
   display: inline-block;
   margin: 0;
@@ -105,7 +180,9 @@
   text-transform: uppercase;
 }
 
+
 /* Video Bg */
+
 .bg-video-wrapper video {
   display: none;
 }
@@ -143,6 +220,7 @@
   background-color: #10222b;
   color: #F6FFF5;
 }
+
 .text-ribbon-primary {
   background-color: #E2B46C;
   color: #10222b;
@@ -151,6 +229,7 @@
 .stage.stage-app-show {
   background-color: white;
 }
+
 .stage-shelf {
   background-color: #10222b;
 }
@@ -220,9 +299,11 @@ html.app-light body {
   background-color: #fff;
 }
 
+
 /*
  * Styles for Show page
  */
+
 body > img {
   display: none;
 }
@@ -248,10 +329,13 @@ NaNplayer-controls button:hover {
   padding-bottom: 35px;
   background-color: #f7fafa;
 }
+
 .app-plyr .app-show-info h3 {
   margin-bottom: 0;
   color: #373E44;
+  text-transform: uppercase;
 }
+
 .app-plyr .app-show-info p {
   color: #828587;
   margin-bottom: 3px;
@@ -261,6 +345,7 @@ NaNplayer-controls button:hover {
   margin-top: 35px;
   margin-bottom: 175px;
 }
+
 
 /*
  * Styles for Show List page
